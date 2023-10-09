@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Website</title>
+    <script src="hostCleanup.html"></script>
+</head>
+<div class="topnav">
+    <a href="home.html">Home</a>
+    <a href="joinCleanup.html">Join Cleanup</a>
+    <a class="active" href="hostCleanup.html">Host Cleanup</a>
+    <a href="leaderboard.html">Leaderboard</a>
+  </div>
+<body>
+    <h1>Cleanups</h1>
+
+    <script>
+      window.onload = function() {
+        // Get the value from localStorage
+        var first_name = localStorage.getItem('first_name');
+        var last_name = localStorage.getItem('last_name');
+        var e_mail = localStorage.getItem('e_mail');
+        var from_Year = localStorage.getItem('from_Year');
+        var from_Month = localStorage.getItem('from_Month');
+        var from_Day = localStorage.getItem('from_Day');
+        var to_Year = localStorage.getItem('to_Year');
+        var to_Month = localStorage.getItem('to_Month');
+        var to_Day = localStorage.getItem('to_Day');
+        var from_Time = localStorage.getItem('from_Time');
+        var to_Time = localStorage.getItem('to_Time');
+        var street_Address = localStorage.getItem('street_Address');
+        var city_Loc = localStorage.getItem('city_Loc');
+        var state_Loc = localStorage.getItem('state_Loc');
+        
+        // Display the value on the page
+        var output_first_name = document.getElementById('first_name');
+        output_first_name.innerText = first_name;
+
+        var output_last_name = document.getElementById('last_name');
+        output_last_name.innerText = last_name;
+        
+        var output_e_mail = document.getElementById('e_mail');
+        output_e_mail.innerText = e_mail;
+
+        var output_from_Year = document.getElementById('from_Year');
+        output_from_Year.innerText = from_Year;
+
+        var output_from_Month = document.getElementById('from_Month');
+        output_from_Month.innerText = from_Month;
+
+        var output_from_Day = document.getElementById('from_Day');
+        output_from_Day.innerText = from_Day;
+
+        var output_to_Year = document.getElementById('to_Year');
+        output_to_Year.innerText = to_Year;
+
+        var output_to_Month = document.getElementById('to_Month');
+        output_to_Month.innerText = to_Month;
+
+        var output_to_Day = document.getElementById('to_Day');
+        output_to_Day.innerText = to_Day;
+
+        var output_from_Time = document.getElementById('from_Time');
+        output_from_Time.innerText = from_Time;
+
+        var output_to_Time = document.getElementById('to_Time');
+        output_to_Time.innerText = to_Time;
+
+        var output_street_Address = document.getElementById('street_Address');
+        output_street_Address.innerText = street_Address;
+
+        var output_city_Loc = document.getElementById('city_Loc');
+        output_city_Loc.innerText = city_Loc;
+
+        var output_state_Loc = document.getElementById('state_Loc');
+        output_state_Loc.innerText = state_Loc;
+      };
+    
+    </script>
+
+    <h3>Thank you for submtting a form! Please allow 5-10 business days for this event to be approved and made public.</h3>
+    <br>
+    <p><b>Organizer Contact Information:</b></p>
+    <p>First Name:</p><p id="first_name"></p>
+    <p>Last Name:</p><p id="last_name"></p>
+    <p>Email:</p><p id="e_mail"></p>
+    <br>
+    <p><b>Event Date:</b></p>
+    <p><b>From:</b></p>
+    <p><span id="from_Month"></span> <span id="from_Day"></span>, <span id="from_Year"></span></p>
+    <p id="from_Time"></p>
+    <p><b>To:</b></p>
+    <p><span id="to_Month"></span> <span id="to_Day"></span>, <span id="to_Year"></span></p>
+    <p id="to_Time"></p>
+    <br>
+    <p><b>Event Location:</b></p>
+    <p id="street_Address"></p>
+    <p id="city_Loc"></p>
+    <p id="state_Loc"></p>
+
+    <br>
+    <br>
+    <br>
+</body>
+</html>
